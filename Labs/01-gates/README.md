@@ -34,7 +34,7 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=f_{OR}&space;=&space;\overline&space;{&space;\overline&space;{a&space;}&plus;b}&space;&plus;&space;\overline&space;{\overline{b}&plus;&space;c}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{OR}&space;=&space;\overline&space;{&space;\overline&space;{a&space;}&plus;b}&space;&plus;&space;\overline&space;{\overline{b}&plus;&space;c}" title="f_{OR} = \overline { \overline {a }+b} + \overline {\overline{b}+ c}" /></a>
 
 | **A** | **B** |**C** | **f**  | **fAND**  | **fOR**  |
- | ------------- | ------------- | ------------- | ------------- |
+ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | 0 | 0 | 0 | 0 | 1 | 0 |
  | 0 | 0 | 1 | 0 | 1 | 0 |
  | 0 | 1 | 0 | 1 | 1 | 1 |
