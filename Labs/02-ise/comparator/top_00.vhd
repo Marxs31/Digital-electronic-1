@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   08:33:05 02/13/2020
+-- Create Date:   08:31:22 02/13/2020
 -- Design Name:   
--- Module Name:   /home/lab661/Documents/xfiala/Digital-Electronics-1/Labs/02-ise/comparator/top_tb00.vhd
+-- Module Name:   /home/lab661/Documents/xfiala/Digital-Electronics-1/Labs/02-ise/comparator/top_00.vhd
 -- Project Name:  comparator
 -- Target Device:  
 -- Tool versions:  
@@ -32,10 +32,10 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY top_tb00 IS
-END top_tb00;
+ENTITY top_00 IS
+END top_00;
  
-ARCHITECTURE behavior OF top_tb00 IS 
+ARCHITECTURE behavior OF top_00 IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -61,7 +61,7 @@ ARCHITECTURE behavior OF top_tb00 IS
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
- --  constant <clock>_period : time := 10 ns;
+   constant <clock>_period : time := 10 ns;
  
 BEGIN
  
@@ -75,13 +75,13 @@ BEGIN
         );
 
    -- Clock process definitions
---   <clock>_process :process
---   begin
---		<clock> <= '0';
---		wait for <clock>_period/2;
---		<clock> <= '1';
---		wait for <clock>_period/2;
---   end process;
+   <clock>_process :process
+   begin
+		<clock> <= '0';
+		wait for <clock>_period/2;
+		<clock> <= '1';
+		wait for <clock>_period/2;
+   end process;
  
 
    -- Stimulus process
@@ -90,13 +90,10 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
---      wait for <clock>_period*10;
+      wait for <clock>_period*10;
 
       -- insert stimulus here 
-	 BTN1 <= '0'; BTN0 <= '0'; wait for 100 ns;
-    BTN1 <= '0'; BTN0 <= '1'; wait for 100 ns;
-    BTN1 <= '1'; BTN0 <= '0'; wait for 100 ns;
-    BTN1 <= '1'; BTN0 <= '1'; wait for 100 ns;
+
       wait;
    end process;
 

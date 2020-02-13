@@ -25,7 +25,7 @@ end entity top;
 ------------------------------------------------------------------------
 architecture Behavioral of top is
 begin
-    LD2 <= '1';
-    LD1 <= '0';
-    LD0 <= not(not(BTN1) and not(BTN0));
+    LD2 <= not(BTN0 and not BTN1);
+    LD1 <= not((not BTN0 and not BTN1) or (BTN0 and BTN1));
+    LD0 <= not(not BTN0 and BTN1);
 end architecture Behavioral;
