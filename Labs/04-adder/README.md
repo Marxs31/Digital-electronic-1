@@ -30,7 +30,7 @@ The purpose of this laboratory exercise is to design an adder. It is a type of d
     | :-: | :-: | :-: | :-: | :-: |
     | 0 | 0 | 0 | 0 | 0 |
     | 0 | 0 | 1 | 0 | 1 |
-    | 0 | 1 | 0 | 0 | 0 |
+    | 0 | 1 | 0 | 0 | 1 |
     | 0 | 1 | 1 | 1 | 0 |
     | 1 | 0 | 0 | 0 | 1 |
     | 1 | 0 | 1 | 1 | 0 |
