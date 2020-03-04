@@ -2,7 +2,7 @@
 
     &nbsp;
     
- ![equation](https://latex.codecogs.com/gif.latex?T_%7Bclk%7D%3D%5Cfrac%7B1%7D%7Bf_%7Bclk%7D%7D%3D%200%2C1%20ms) 
+     ![equation](https://latex.codecogs.com/gif.latex?T_%7Bclk%7D%3D%5Cfrac%7B1%7D%7Bf_%7Bclk%7D%7D%3D%200%2C1%20ms) 
     
     &nbsp;
 
