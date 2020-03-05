@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/lab661/Documents/xfiala/Digital-electronics-1/Labs/05-counter_binary/binary_counter/g_NBIT2_isim_beh.exe" -prj "/home/lab661/Documents/xfiala/Digital-electronics-1/Labs/05-counter_binary/binary_counter/g_NBIT2_beh.prj" "work.g_NBIT2" 
