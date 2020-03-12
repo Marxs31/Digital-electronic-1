@@ -145,13 +145,13 @@ begin
     begin
         case s_cnt is
         when "00" =>
-            -- WRITE YOUR CODE HERE
+            dig_o <= data0_i
         when "01" =>
-            -- WRITE YOUR CODE HERE
+            dig_o <= data1_i
         when "10" =>
-            -- WRITE YOUR CODE HERE
+            dig_o <= data2_i
         when others =>
-            -- WRITE YOUR CODE HERE
+            dig_o <= data3_i
         end case;
     end process p_mux;
 
