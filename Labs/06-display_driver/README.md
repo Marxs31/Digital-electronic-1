@@ -113,6 +113,7 @@ begin
     --------------------------------------------------------------------
     -- Sub-block of clock_enable entity. Create s_en signal.
     --- WRITE YOUR CODE HERE
+        s_en <= clock_enable_o;
 
 
     --------------------------------------------------------------------
@@ -130,9 +131,9 @@ begin
     begin
         if rising_edge(clk_i) then  -- Rising clock edge
             if srst_n_i = '0' then  -- Synchronous reset (active low)
-                -- WRITE YOUR CODE HERE
+                s_cnt <= "00";
             elsif s_en = '1' then
-                -- WRITE YOUR CODE HERE
+                s_cnt <= s_cnt+1;
             end if;
         end if;
     end process p_select_cnt;
@@ -145,13 +146,13 @@ begin
     begin
         case s_cnt is
         when "00" =>
-            dig_o <= data0_i
+            dig_o <= data0_i;
         when "01" =>
-            dig_o <= data1_i
+            dig_o <= data1_i;
         when "10" =>
-            dig_o <= data2_i
+            dig_o <= data2_i;
         when others =>
-            dig_o <= data3_i
+            dig_o <= data3_i;
         end case;
     end process p_mux;
 
