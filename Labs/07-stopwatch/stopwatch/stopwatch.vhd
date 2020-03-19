@@ -4,15 +4,23 @@ use ieee.numeric_std.all;
 
 entity stopwatch is
 port(
-    hth_l_o : out std_logic_vector(4-1 downto 0);
-...
+    hth_l_o : out std_logic_vector(4-1 downto 0); 
+    hth_h_o : out std_logic_vector(4-1 downto 0); 
+    sec_h_o : out std_logic_vector(4-1 downto 0); 
+    sec_l_o : out std_logic_vector(4-1 downto 0);
+    clk_i   : in  std_logic;  
+    srst_n_i : in  std_logic;  
+    ce_100Hz_i : in  std_logic; 
+    cnt_en_i : in  std_logic );
+    
+    
 
 architecture Behavioral of stopwatch is
     signal s_cnt0 : unsigned(4-1 downto 0) := (others => '0');
-    ...
+   
 
     s_cnt0 <= s_cnt0 + 1;
-    ...
+ 
 
     hth_l_o <= std_logic_vector(s_cnt0);
 end architecture Behavioral;
