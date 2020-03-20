@@ -1,8 +1,11 @@
 # Lab 7: Stopwatch
 
 SIMULACE:
-![graf1](../../Images/graf1.png)
+
 ![graf2](../../Images/graf2.png)
+
+testbench:
+![graf1](../../Images/graf1.png)
 #### Objectives
 
 In this laboratory exercise you will implement BCD counters. You will use the Xilinx Isim simulator or the EDA playground online tool. You will use a push button on the CoolRunner board as reset device, onboard clock signal with frequency of 10&nbsp;kHz for synchronization, and 7-segment display as output device.
