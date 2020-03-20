@@ -1,4 +1,6 @@
 # Lab 7: Stopwatch
+Top schema:
+![top_schema](../../Images/top_schema.png)
 
 SIMULACE:
 
