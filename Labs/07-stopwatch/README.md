@@ -1,4 +1,6 @@
 # Lab 7: Stopwatch
+
+SIMULACE:
 ![graf1](../../Images/graf1.png)
 ![graf2](../../Images/graf2.png)
 #### Objectives
