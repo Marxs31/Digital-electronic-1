@@ -9,3 +9,5 @@ top:
 Reset:
 
 ![sim3](../../Images/sim3.png)
+
+![diagram8](../../Images/diagram8.jpg)
