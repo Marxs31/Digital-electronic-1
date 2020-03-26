@@ -113,3 +113,4 @@ begin
 	count_o <= std_logic_vector(s_count); -- tb01
 	
 end architecture Behavioral;
+--Fiala Marek
