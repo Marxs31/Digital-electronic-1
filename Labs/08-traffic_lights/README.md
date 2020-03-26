@@ -1,8 +1,8 @@
 Traffic Lights
 
 
-![sim3](../../Images/sim3.png)
+![sim4](../../Images/sim4.png)
 
 Reset:
 
-![sim4](../../Images/sim4.png)
+![sim3](../../Images/sim3.png)
