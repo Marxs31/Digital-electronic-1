@@ -2,7 +2,7 @@ Traffic Lights
 
 top:
 
-![top8](../../Images/top8.png)
+![top8](../../Images/top8.jpg)
 
 ![sim4](../../Images/sim4.png)
 
