@@ -1,4 +1,5 @@
 Projekty
+
 Podstatou projektu je samostatně nastudovat zadanou problematiku, navrhnout koncepci vlastního řešení a tu simulovat, případně implementovat.
 
 Projekt řeší studenti ve stejných skupinách jako ve cvičeních na počítači a to od 9. do 13. týdne semestru. Zdrojové kódy pro CPLD je nutné psát v jazyce VHDL v prostředí Xilinx ISE nebo EDA Playground. Předpokládejte implementaci top vrstvy na CoolRunner-II CPLD starter board.
