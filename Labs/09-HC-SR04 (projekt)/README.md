@@ -13,6 +13,10 @@ Schéma modulu HC_SR04:
 
 ![projekt2](../../Images/projekt2.jpeg)
 
+Vnitřní zapojení modulu HC_SR04:
+
+![projekt3](../../Images/projekt3.jpeg)
+
 | **Laboratory exercise** | **Description** |
 
 
