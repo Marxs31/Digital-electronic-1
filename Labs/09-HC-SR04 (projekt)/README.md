@@ -121,17 +121,18 @@ Simulací jsme potvrdili funkčnost našeho programu, pro účel použití měř
 Cílem tohoto projektu bylo naprogramovat ultrazvukový měřič vzdálenosti HC-SR04, který principálně slouží jako vysílač / příjmač vyslaného signálu a dále převod tohoto signál na výstup v podobě zobrazení na sedmisegmentovcém displeji.
 
 ### Legenda:
-ano_o		-anode output
-clk_i 		-clock
-cnt_o		-counter output
-din_i 		-data input
-dis_o		-distance
-ech_i 		-echo inputs
-ena		-enable
-rst_i 		-reset
-str_i 		-start
-trg_o 		-trigger
+ano_o		-anode output                                      
+clk_i 		-clock                                                         
+cnt_o		-counter output                                                    
+din_i 		-data input                                                     
+dis_o		-distance                                                                   
+ech_i 		-echo inputs                                                          
+ena		-enable                                                          
+rst_i 		-reset                                                               
+str_i 		-start                                                           
+trg_o 		-trigger                                                           
 seg_o		-segment output
+
 ## Zdroje
 [web page](https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html)
 http://web.eece.maine.edu/~zhu/book/lab/HC-SR04%20User%20Manual.pdf                            
