@@ -30,11 +30,17 @@ Výstup **Counteru** je čas a ne vzdálenost,  proto potřebujeme výstup vyná
 
 Pracujeme v "μs" proto převedeme rychlost na patřičné hodnoty.
 
-**rychlost zvuku** = (mm/μs) = 340 m/s * 1000mm/1m *1s/1000000us = 0,34 mm/μs (oba směry) --> 0,17mm/μs (jeden směr)
+**rychlost zvuku** = (mm/μs) = 340 m/s * 1000mm/1m *1s/1000000μs = 0,34 mm/μs (oba směry) --> **0,17mm/μs** (jeden směr)
 
 Abychom mohli binarní číslo z **Counter** vynásobit decimálním číslem, musíme číslo převést na binární číslo.
 
 ![projekt4](../../Images/projekt4.jpeg)
+
+
+Abychom mohli převést desetinné číslo na fixní fomát potřebujeme zvolit bitové číslo pro celé číslo a pro zlomek.
+Protože **0.17** je menší jak 1, můžeme použít zlomkovou část viz.
+
+![projekt5](../../Images/projekt5.jpeg)
 
 | **Laboratory exercise** | **Description** |
 
