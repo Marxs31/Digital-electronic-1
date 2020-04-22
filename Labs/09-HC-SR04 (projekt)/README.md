@@ -36,6 +36,7 @@ Dále pro převedení desetinného čísla na fixní fomát potřebujeme zvolit 
 Protože **0.17** je menší jak 1, můžeme použít zlomkovou část viz.
 
 ![projekt5](../../Images/projekt5.jpeg)
+
 Pro zlomkovou část máme formát **F0.16**.                       
 Na druhou stranu zčítaný čas z **Counter** je ve tvaru celého čísla, takže je ve formátu **F15.0**.  
 Proto součin **F15.0 * F0.16** nám dává pevný bod formátu **F15.16**.   
@@ -43,6 +44,19 @@ Pro převedení  **0.17** na formát **F0.16**, vynásobíme číslem 2^16 = **1
 K zobrazení vzdálenosti čtyř metrů nám stačí 12 bitů viz:                             
 
 ![projekt6](../../Images/projekt6.jpeg)
+
+Vytvořili jsme program **DistanceMeter** a jemu příslušné **Latch, Timer, Counter**.          
+Dále provedeme simulaci funkčnosti **DistanceMeter**:
+
+**Nastavíme:**
+	rst_i (reset) na 0 ->0ns, 1 ->10ns                  
+	clk (clock) na signál o frekvenci 100Mhz                                                     
+	str (start) na 0 ->0ns, 1 ->100ns, 0 ->110ns                                                     
+
+
+![projekt7](../../Images/projekt7.png)
+
+
 
 | **Laboratory exercise** | **Description** |
 
