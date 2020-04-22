@@ -73,6 +73,22 @@ Vnitřní zapojení **BinarToDecimal**:
 
 ![projekt10](../../Images/projekt10.jpg)
 
+Začínáme pulzem v str_i, výstup z **Latch** je pojmenován jako **ena**. Counter je nastaven na "1". Výstup **Counteru** je porovnán s **din_i** (data input), pokud je **din_i** větší nebo stejný jako **cnt_o**, výstup bude "1", takže na **inc_i** (vstup do **DecimalCounter**) bude "1". Poté co **cnt_o** překoná **din_i**,  bude na výstupu "0". Problém aby **cnt_o** nebyl znovu "0", jsme přiřadili **ena** do hradla AND se signálem **gte**. Takže na výstupu bude "1", pokud na obou vstupech bude "1". Aby se nám na výstupu **DecimalCounter** nezvyšovala hodnota z předchozých hodnot, tak jsme zavedli **rst_i** (reset) společně s negovaným signálem startu do AND pro resetování **DecimalCounter** pokaždé, když začne nový proces.
+
+Nyní provedeme simulaci:
+
+![projekt11](../../Images/projekt11.png)
+![projekt10](../../Images/projekt12.png)
+
+
+
+
+
+
+
+
+
+
 | **Laboratory exercise** | **Description** |
 
 
