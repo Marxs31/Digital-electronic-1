@@ -48,7 +48,7 @@ K zobrazení vzdálenosti čtyř metrů nám stačí 12 bitů viz:
 Vytvořili jsme program **DistanceMeter** a jemu příslušné **Latch, Timer, Counter**.          
 Dále provedeme simulaci funkčnosti **DistanceMeter**:
 
-**Nastavíme:**
+**Nastavíme:**                                                    
 	rst_i (reset) na 0 ->0ns, 1 ->10ns                  
 	clk (clock) na signál o frekvenci 100Mhz                                                     
 	str (start) na 0 ->0ns, 1 ->100ns, 0 ->110ns                                                     
