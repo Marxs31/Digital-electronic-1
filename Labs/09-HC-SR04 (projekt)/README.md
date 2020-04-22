@@ -24,7 +24,7 @@ Rychlost zvuku ve vzduchu za pokojové teploty je přibližně 340 m/s.
 
 Maximální čas signálu pro 4 metrový rozsah je :  
 
-tmax=  (8 m (bereme v potaz oba směry))/340= 0,023529 s = 23529 μs (to by jsme potřebovali 15 bit counter)
+**tmax**=  (8 m (bereme v potaz oba směry))/340= 0,023529 s = 23529 μs (to by jsme potřebovali 15 bit counter)
 
 Výstup **Counteru** je čas a ne vzdálenost,  proto potřebujeme výstup vynásobit rychlostí zvuku:
 
