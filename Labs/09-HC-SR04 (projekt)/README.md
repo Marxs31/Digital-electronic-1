@@ -59,7 +59,7 @@ Dále provedeme simulaci funkčnosti **DistanceMeter**:
 Po uspěšném zprovoznění se můžeme pustit na další část. 
 
 ### Dále se pokusíme dostat signál do finální podoby ve formě zobrazení hodnoty na 7 segmentovém displeji.
-Jako nejjednodušší řešení jsme vymysleli zařazení **DecimalCounteru**  na výstup **dis_o** a vytvořili převod **BinarTuDecimal**.
+Jako nejjednodušší řešení jsme vymysleli zařazení **DecimalCounteru**  na výstup **dis_o** a vytvořili převod **BinarToDecimal**.
 
 Vnitřní zapojení **DecimalCounter**:
 
