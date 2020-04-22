@@ -125,6 +125,11 @@ Cílem tohoto projektu bylo naprogramovat ultrazvukový měřič vzdálenosti HC
 
 ## Zdroje
 [web page](https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html)
+http://web.eece.maine.edu/~zhu/book/lab/HC-SR04%20User%20Manual.pdf
+https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+https://startingelectronics.org/software/VHDL-CPLD-course/tut4-multiplexers/
+https://forums.xilinx.com/t5/General-Technical-Discussion/Counter-implementation-in-vhdl/td-p/570433
+https://www.xilinx.com/support/documentation/university/Vivado-Teaching/HDL-Design/2015x/VHDL/docs-pdf/lab5.pdf
 
 
 
