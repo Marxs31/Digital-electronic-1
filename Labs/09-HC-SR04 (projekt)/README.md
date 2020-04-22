@@ -13,9 +13,28 @@ Schéma modulu HC_SR04:
 
 ![projekt2](../../Images/projekt2.jpeg)
 
-Vnitřní zapojení modulu HC_SR04:
+Vnitřní zapojení modulu **HC_SR04**:
 
 ![projekt3](../../Images/projekt3.jpeg)
+
+Když je **Latch** outputu  signál "1", označený „ena“ (který slouží i jako trigger modelu) aktivuje **Timer** 10us. Pro změření délky signálu využijeme Timer, kdykoliv je echo_o "1", **Timer** bude produkovat signál každou 1 μs.
+**Counter** závisí na maximální délce měření. Maximální délka modulu je 4 metry což je 8 metrů obousměrně. Z toho vypočteme:
+
+Rychlost zvuku ve vzduchu za pokojové teploty je přibližně 340 m/s.
+
+Maximální čas signálu pro 4 metrový rozsah je :  
+
+tmax=  (8 m (bereme v potaz oba směry))/340= 0,023529 s = 23529 μs (to by jsme potřebovali 15 bit counter)
+
+Výstup **Counteru** je čas a ne vzdálenost,  proto potřebujeme výstup vynásobit rychlostí zvuku:
+
+Pracujeme v "μs" proto převedeme rychlost na patřičné hodnoty.
+
+**rychlost zvuku** = (mm/μs) = 340 m/s * 1000mm/1m *1s/1000000us = 0,34 mm/μs (oba směry) --> 0,17mm/μs (jeden směr)
+
+Abychom mohli binarní číslo z **Counter** vynásobit decimálním číslem, musíme číslo převést na binární číslo.
+
+![projekt4](../../Images/projekt4.jpeg)
 
 | **Laboratory exercise** | **Description** |
 
