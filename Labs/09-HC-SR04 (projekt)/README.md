@@ -22,7 +22,7 @@ Když je **Latch** outputu  signál "1", označený „ena“ (který slouží i
 
 Rychlost zvuku ve vzduchu za pokojové teploty je přibližně 340 m/s.
 Maximální čas signálu pro 4 metrový rozsah je :  
-**tmax**=  (8 m (bereme v potaz oba směry))/340= 0,023529 s = 23529 μs (to by jsme potřebovali 15 bit counter)
+**tmax**=  (8 m (bereme v potaz oba směry))/340= 0,023529 s = **23529 μs** (to by jsme potřebovali 15 bit counter)
 
 Výstup **Counteru** je čas a ne vzdálenost,  proto potřebujeme výstup vynásobit rychlostí zvuku:
 Pracujeme v "μs" proto převedeme rychlost na patřičné hodnoty:                                  
@@ -32,11 +32,17 @@ Abychom mohli binarní číslo z **Counter** vynásobit decimálním číslem, m
 
 ![projekt4](../../Images/projekt4.jpeg)
 
-
-Abychom mohli převést desetinné číslo na fixní fomát potřebujeme zvolit bitové číslo pro celé číslo a pro zlomek.
+Dále pro převedení desetinného čísla na fixní fomát potřebujeme zvolit bitové číslo pro celé číslo a pro zlomek.
 Protože **0.17** je menší jak 1, můžeme použít zlomkovou část viz.
 
 ![projekt5](../../Images/projekt5.jpeg)
+Pro zlomkovou část máme formát **F0.16**.                       
+Na druhou stranu zčítaný čas z **Counter** je ve tvaru celého čísla, takže je ve formátu **F15.0**.  
+Proto součin **F15.0 * F0.16** nám dává pevný bod formátu **F15.16**.   
+Pro převedení  **0.17** na formát **F0.16**, vynásobíme číslem 2^16 = **11141.12** to převedeme na binární číslo se 16 bity, což je **0010 1011 1000 0101**.                      
+K zobrazení vzdálenosti čtyř metrů nám stačí 12 bitů viz:                             
+
+![projekt6](../../Images/projekt6.jpeg)
 
 | **Laboratory exercise** | **Description** |
 
