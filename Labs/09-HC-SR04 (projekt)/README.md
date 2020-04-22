@@ -77,14 +77,42 @@ Začínáme pulzem v str_i, výstup z **Latch** je pojmenován jako **ena**. Cou
 
 Nyní provedeme simulaci:
 
+![projekt10](../../Images/projekt10.png)
 ![projekt11](../../Images/projekt11.png)
-![projekt10](../../Images/projekt12.png)
 
+Simulací jsme ověřili funkčnost našeho čítače.
 
+Následně upravíme **DistanceMeter**:
+viz modul:
 
+![projekt12](../../Images/projekt12.png)
 
+Ale není tu signál, který indikuje, kdy měřící proces zmizel a také, kdy začít konvertovat. Měřící proces končí když **Echo signál** klesá k "0". Takže potřebujeme detekovat, kdy signál klesne. Proto jsme vytvořili **FallingEdge** detektor. 
 
+![projekt13](../../Images/projekt13.jpeg)
 
+Zobrazení funkce detektoru:
+ 
+ ![projekt14](../../Images/projekt14.jpg)
+ 
+Zde vidíme modul **FallingEdge**:
+
+![projekt15](../../Images/projekt15.png)
+
+ Vnitřní zapojení: (pro zvýšení přesnosti jsme zapojili více **Flip_flop** za sebou)
+ 
+  ![projekt16](../../Images/projekt16.jpeg)
+
+Následně přidáme náš **FallingEdge** do schéma modulu **DistanceMeter**:
+
+  ![projekt17](../../Images/projekt17.jpg)
+
+Dále potřebujeme přidat výstup pro sedmisegmentovku a anod. display.
+Poté jsme vyzkoušeli funkčnost v simulaci:
+
+**Nastavení**                                   
+rst_i, clk_i je stejné jako v předchozích simulací
+ech_i (echo signál) přiřadíme k tlačítku na klávesnici třeba S, přes které ovládáme signál viz schéma.
 
 
 
