@@ -2,8 +2,12 @@
 # Ultrazvukový měřič vzdálenosti HC-SR04
 
 Podstatou tohoto projektu je samostatně nastudovat zadanou problematiku, navrhnout koncepci vlastního řešení a tu simulovat, případně implementovat.
+
 Z datasheetu HC_SR04 jsme zjistili snímací rozsah 2-400cm s 3mm přesností.
+
 Pro měření vzdálenosti potřebujeme vědět rychlost signálu a uběhnutý čas. Echo back je čas, indikující trvání příjmutí signálu od vysílání.
+
+![projekt1](../../Images/projekt1.png)
 
 | **Laboratory exercise** | **Description** |
 | :-- | :-- |
