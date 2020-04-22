@@ -1,7 +1,7 @@
 
 # Ultrazvukový měřič vzdálenosti HC-SR04
 
-The repository contains VHDL examples for bachelor course [*Digital Electronics 1*](https://www.vutbr.cz/en/students/courses/detail/210628) at Brno University of Technology, Czechia. In folder `Docs` all manuals are stored. Folder `Docs/Hw` contains KiCad schematic of CPLD expansion board used in the course. All screenshots and images are located in `Images` folder and  computer lab exercises are located in `Labs` folder.
+Podstatou tohoto projektu je samostatně nastudovat zadanou problematiku, navrhnout koncepci vlastního řešení a tu simulovat, případně implementovat.
 
 | **Laboratory exercise** | **Description** |
 | :-- | :-- |
