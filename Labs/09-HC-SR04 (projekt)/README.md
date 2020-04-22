@@ -56,6 +56,10 @@ Dále provedeme simulaci funkčnosti **DistanceMeter**:
 
 ![projekt7](../../Images/projekt7.png)
 
+Po uspěšném zprovoznění se můžeme pustit na další část. 
+
+## Dále se pokusíme dostat signál do finální podoby ve formě zobrazení hodnoty na 7 segmentovém displeji.
+
 
 
 | **Laboratory exercise** | **Description** |
