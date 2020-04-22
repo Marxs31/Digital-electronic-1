@@ -1,28 +1,52 @@
-Projekty
 
-Podstatou projektu je samostatně nastudovat zadanou problematiku, navrhnout koncepci vlastního řešení a tu simulovat, případně implementovat.
+# Digital electronics 1
 
-Projekt řeší studenti ve stejných skupinách jako ve cvičeních na počítači a to od 9. do 13. týdne semestru. Zdrojové kódy pro CPLD je nutné psát v jazyce VHDL v prostředí Xilinx ISE nebo EDA Playground. Předpokládejte implementaci top vrstvy na CoolRunner-II CPLD starter board.
+The repository contains VHDL examples for bachelor course [*Digital Electronics 1*](https://www.vutbr.cz/en/students/courses/detail/210628) at Brno University of Technology, Czechia. In folder `Docs` all manuals are stored. Folder `Docs/Hw` contains KiCad schematic of CPLD expansion board used in the course. All screenshots and images are located in `Images` folder and  computer lab exercises are located in `Labs` folder.
 
-Studenti mohou využívat konzultace se svým vyučujícím ze cvičení a nesmí "úkolovat" nikoho dalšího, včetně konzultací s jinými akademickými pracovníky či doktorandy. Na základní otázky typu Co je to ten clock_enable?, Jak zablikám LEDkou?, Jak funguje process ve VHDL?, apod., které byly řešeny v předchozích počítačových cvičení ale nebude odpovídáno.
+| **Laboratory exercise** | **Description** |
+| :-- | :-- |
+| [01-gates](Labs/01-gates) | Lab 1: Introduction to digital circuits |
+| [02-ise](Labs/02-ise) | Lab 2: Introduction to VHDL and Xilinx ISE |
+| [03-segment](Labs/03-segment) | Lab 3: Hexadecimal digit to seven-segment decoder |
+| [04-adder](Labs/04-adder) | Lab 4: Binary adder |
+| [05-counter_binary](Labs/05-counter_binary) | Lab 5: Binary counter |
+| [06-display_driver](Labs/06-display_driver) | Lab 6: Driver for seven-segment display |
+| [07-stopwatch](Labs/07-stopwatch) | Lab 7: Stopwatch |
+| [08-traffic_lights](Labs/08-traffic_lights) | Lab 8: Traffic light controller |
+| [project](Labs/project) | Lab 9-13: Project |
 
-Projekt se odevzdává ve čtvrtek 30.4.2020 prostřednictvím GitHub repozitáře. Ten musí obsahovat vlastní README.md soubor s kompletním popisem řešené problematiky, dále schémata obvodových zapojení případných periferií, odkazy na zdrojové soubory v repozitáři, testbenche všech vyvíjených komponent, screenshoty ze simulací, diskuze výsledků, seznam zdrojů, ze kterých bylo čerpáno, apod. Zdrojové kódy mohou obsahovat výhradně anglický jazyk, README.md soubor může být psán v českém, slovenském, nebo anglickém jazyce.
 
-Hodnotí se odpovídající náročnost vytvořené aplikace, funkčnost, postup řešení, dodržování formálních pravidel ve zdrojových kódech, dělení kódu do modulů, čistota kódu, komentáře, kompletnost a názornost dokumentace, obvodové zapojení aplikace, diskuze výsledků, dodržení pokynů ze zadání.
+## Materials
 
-Využívejte moduly z předchozích cvičení (především clock_enable, binary_cnt, driver_7seg) a nikoliv převzaté kódy z Internetu. Všechny aplikace řešte jako synchronní sekvenční systémy.
+The following hardware and software components are mainly used in the lab.
+
+### Hardware
+
+* CoolRunner-II CPLD starter board: [reference manual](Docs/coolrunner-ii_rm.pdf), [schematic](Docs/coolrunner-ii_sch.pdf), [XC2C256-TQ144](Docs/xc2c256_cpld.pdf), [shop](https://store.digilentinc.com/coolrunner-ii-cpld-starter-board-limited-time/)
+* Platform Cable USB II, USB tool for in-circuit configuration and programming of all Xilinx devices: [shop](https://www.xilinx.com/products/boards-and-kits/hw-usb-ii-g.html)
+* CPLD expansion board by Michal Kubicek: [schematic](Docs/cpld_expansion.pdf)
+
+### Software
+
+* ISE Design, ISE WebPACK Design Software, ver 14.7: [web page](https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html), [installation](https://github.com/tomas-fryza/Digital-electronics-1/wiki)
+* Linux Mint 18.2 "Sonya" - Xfce (64-bit): [web page](https://linuxmint.com/download_all.php)
+
+<img src="Images/coolrunner_board.jpg" alt="CoolRunner-II board" height="300"/> <img src="Images/ise_synthesize_org.png" alt="ISE" height="300"/>
 
 
-Témata:
+## References
 
-St 9h: Kódový zámek s maticovou klávesnicí 4x3, časovým limitem pro zadání správného pinu a signalizací chybného pokusu.
+1. [ES 4 VHDL reference sheet](Docs/vhdl_cheatsheet.pdf)
+2. [GitHub GIT CHEAT SHEET](Docs/git_cheatsheet.pdf)
+3. [Digital electronics 1 wiki](https://github.com/tomas-fryza/Digital-electronics-1/wiki)
+4. ASHENDEN, Peter J. *The designer's guide to VHDL.* 3rd ed. Boston: Morgan Kaufmann Publishers, c2008. ISBN 978-0-12-088785-9.
+5. CHU, Pong P. *FPGA prototyping by VHDL examples.* Hoboken, N.J.: Wiley-Interscience, c2008. ISBN 978-0-470-18531-5.
+6. KALLSTROM, P. [A Fairly Small VHDL Guide](Docs/VHDL_guide.pdf). Version 2.1.
 
-St 11h: PWM stmívač s nastavitelnou dobou "načasování" s rotačním enkodérem KY-040 s tlačítkem. Po uplynutí zadané doby se výstup ze 100% PWM plynule ztlumí na nulu.
 
-St 13h: UART (Universal asynchronous receiver/transmitter) vysílač s nastavitelnými parametry UART rámce, datového slova a volby jedné ze dvou přednastavených standardních symbolových rychlostí za chodu aplikace.
+## License
 
-Čt 8h: Ultrazvukový měřič vzdálenosti HC-SR04. Výstup na 7segmentovém displeji.
+[MIT](https://choosealicense.com/licenses/mit/)
 
-Čt 10h: Vlastní ALU (Arithmetic Logic Unit) jednotka. Možnost výběru instrukcí a vstupních hodnot za chodu aplikace. Výstup na 7segmentovém displeji.
-
-Čt 12h: Countdown (odečet od nastavené hodnoty do nuly) s rotačním enkodérem KY-040 s tlačítkem a sériovým 7segmentový displejem s obvodem TM1637.
+[![university](https://img.shields.io/badge/university-Brno%20University%20of%20Technology-red.svg)](https://www.vutbr.cz/en/)
+[![department](https://img.shields.io/badge/department-Dept.%20of%20Radio%20Electronics-blue)](https://www.facebook.com
