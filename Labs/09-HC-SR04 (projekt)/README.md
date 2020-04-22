@@ -107,53 +107,24 @@ Následně přidáme náš **FallingEdge** do schéma modulu **DistanceMeter**:
 
   ![projekt18](../../Images/projekt18.jpeg)
 
-Dále potřebujeme přidat výstup pro sedmisegmentovku a anod. display.
+Dále potřebujeme přidat výstup pro sedmisegmentovku a anod. display.                     
 Poté jsme vyzkoušeli funkčnost v simulaci:
 
 **Nastavení**                                   
-rst_i, clk_i je stejné jako v předchozích simulací
+rst_i, clk_i je stejné jako v předchozích simulací                                  
 ech_i (echo signál) přiřadíme k tlačítku na klávesnici třeba S, přes které ovládáme signál viz schéma.
 
   ![projekt19](../../Images/projekt19.png)
   ![projekt20](../../Images/projekt20.png)
+  
+Simulací jsme potvrdili funkčnost našeho programu, pro účel použití měření vzdálenosti.
+Cílem tohoto projektu bylo naprogramovat ultrazvukový měřič vzdálenosti HC-SR04, který principálně slouží jako vysílač / příjmač vyslaného signálu a dále převod tohoto signál na výstup v podobě zobrazení na sedmisegmentovcém displeji.
+
+### Legenda:
+
+
+## Zdroje
+[web page](https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html)
 
 
 
-| **Laboratory exercise** | **Description** |
-
-
-
-## Materials
-
-The following hardware and software components are mainly used in the lab.
-
-### Hardware
-
-* CoolRunner-II CPLD starter board: [reference manual](Docs/coolrunner-ii_rm.pdf), [schematic](Docs/coolrunner-ii_sch.pdf), [XC2C256-TQ144](Docs/xc2c256_cpld.pdf), [shop](https://store.digilentinc.com/coolrunner-ii-cpld-starter-board-limited-time/)
-* Platform Cable USB II, USB tool for in-circuit configuration and programming of all Xilinx devices: [shop](https://www.xilinx.com/products/boards-and-kits/hw-usb-ii-g.html)
-* CPLD expansion board by Michal Kubicek: [schematic](Docs/cpld_expansion.pdf)
-
-### Software
-
-* ISE Design, ISE WebPACK Design Software, ver 14.7: [web page](https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html), [installation](https://github.com/tomas-fryza/Digital-electronics-1/wiki)
-* Linux Mint 18.2 "Sonya" - Xfce (64-bit): [web page](https://linuxmint.com/download_all.php)
-
-<img src="Images/coolrunner_board.jpg" alt="CoolRunner-II board" height="300"/> <img src="Images/ise_synthesize_org.png" alt="ISE" height="300"/>
-
-
-## References
-
-1. [ES 4 VHDL reference sheet](Docs/vhdl_cheatsheet.pdf)
-2. [GitHub GIT CHEAT SHEET](Docs/git_cheatsheet.pdf)
-3. [Digital electronics 1 wiki](https://github.com/tomas-fryza/Digital-electronics-1/wiki)
-4. ASHENDEN, Peter J. *The designer's guide to VHDL.* 3rd ed. Boston: Morgan Kaufmann Publishers, c2008. ISBN 978-0-12-088785-9.
-5. CHU, Pong P. *FPGA prototyping by VHDL examples.* Hoboken, N.J.: Wiley-Interscience, c2008. ISBN 978-0-470-18531-5.
-6. KALLSTROM, P. [A Fairly Small VHDL Guide](Docs/VHDL_guide.pdf). Version 2.1.
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-[![university](https://img.shields.io/badge/university-Brno%20University%20of%20Technology-red.svg)](https://www.vutbr.cz/en/)
-[![department](https://img.shields.io/badge/department-Dept.%20of%20Radio%20Electronics-blue)](https://www.facebook.com
